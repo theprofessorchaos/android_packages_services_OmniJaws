@@ -312,7 +312,7 @@ public class OmniJawsClient {
     }
 
     private String getWindUnit() {
-        return mMetric ? "km/h":"mph";
+        return mMetric ? mContext.getString(R.string.weather_kph) : mContext.getString(R.string.weather_mph);
     }
 
     public void updateSettings() {

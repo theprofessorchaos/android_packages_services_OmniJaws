@@ -158,7 +158,7 @@ public class WeatherInfo {
         if (wind < 0) {
             return "0";
         }
-        return getFormattedValue(wind, metric?"km/h":"m/h");
+        return getFormattedValue(wind, metric?mContext.getString(R.string.weather_kph):mContext.getString(R.string.weather_mph));
     }
 
     public int getWindDirection() {
